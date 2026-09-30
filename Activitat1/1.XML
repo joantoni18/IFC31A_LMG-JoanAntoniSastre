@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<llistaSocis>
+    <soci>
+        <nom>Miquel</nom>
+        <cognom>Pons</cognom>
+        <dni>45633875F</dni>
+        <mail>miquelpons@gmail.com</mail>
+    </soci> 
+    <soci>
+        <nom>Joan</nom>
+        <cognom>Ribes</cognom>
+        <dni>97458352S</dni>
+        <mail>joanribes@gmail.com</mail>
+    </soci>
+    <soci>
+        <nom>Maria</nom>
+        <cognom>Puig</cognom>
+        <dni>68411452W</dni>
+        <mail>mariapuig@gmail.com</mail>
+    </soci>
+</llistaSocis>
