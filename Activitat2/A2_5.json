@@ -2,13 +2,13 @@
     "enquestes": [
         {
             "id": 1,
-            "titol": "Satisfacció del servei d'atenció al client",
+            "títol": "Satisfacció del servei d'atenció al client",
             "activa": true,
             "preguntes": [
                 {
                     "ordre": 1,
                     "text": "Com valores l'atenció rebuda?",
-                    "tipus": "opcio_multiple",
+                    "tipus": "opció_multiple",
                     "opcions": ["Excel·lent", "Bona", "Regular", "Dolenta"]
                 },
                 {
@@ -20,19 +20,19 @@
         },
         {
             "id": 2,
-            "titol": "Preferències d'activitats extraescolars",
+            "títol": "Preferències d'activitats extraescolars",
             "activa": false,
             "preguntes": [
                 {
                     "ordre": 1,
                     "text": "Quina activitat t'agradaria fer?",
-                    "tipus": "opcio_multiple",
+                    "tipus": "opció_multiple",
                     "opcions": ["Esports", "Música", "Informàtica", "Teatre"]
                 },
                 {
                     "ordre": 2,
                     "text": "Quin horari et va millor?",
-                    "tipus": "opcio_multiple",
+                    "tipus": "opció_multiple",
                     "opcions": ["Matí", "Tarda", "Vespre"]
                 }
             ]
