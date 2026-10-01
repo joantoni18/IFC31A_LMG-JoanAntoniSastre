@@ -3,19 +3,19 @@
         {
             "nom":"E-Bike X",
             "tipus":"Bicicleta",
-            "autonomia":120,
+            "autonomia_km":120,
             "preu":1299
         },
         {
             "nom":"City-Scoot",
             "tipus":"Patinet",
-            "autonomia":45,
+            "autonomia_km":45,
             "preu":549
         },
         {
             "nom":"Eco-Car Z",
             "tipus":"Cotxe",
-            "autonomia":410,
+            "autonomia_km":410,
             "preu":31990
         }
     ]
