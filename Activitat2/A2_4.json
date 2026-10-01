@@ -4,31 +4,57 @@
             "nom":"Tauró blanc",
             "tipus":"Peix",
             "hàbitat":"Oceànic",
-            "longitud_m":6.4,
-            "pes_kg":1900,
+            "grandària":[
+                {
+                    "longitud_m":6.4,
+                    "pes_kg":1900
+                }
+            ],
             "estat_conservacio":"En perill",
-            "caracteristica_1":"Depredador superior.",
-            "caracteristica_2":"Temut als oceans per la seva grandària i ferocitat."
+            "característiques":[
+                {
+                    "característica_1":"Depredador superior.",
+                    "característica_2":"Temut als oceans per la seva grandària i ferocitat." 
+                
+                }
+            ]
         },
         {
             "nom":"Balena blava",
             "tipus":"Mamífer marí",
             "hàbitat":"Oceànic",
-            "longitud_m":30,
-            "pes_kg":200000,
+            "grandària":[
+                {
+                    "longitud_m":30,
+                    "pes_kg":200000
+                }
+            ],
             "estat_conservacio":"En perill crític",
-            "caracteristica_1":"L'animal més gran del planeta.",
-            "caracteristica_2":"S'alimenta principalment de krill."
+            "característiques":[
+                {
+                    "característica_1":"L'animal més gran del planeta.",
+                    "característica_2":"S'alimenta principalment de krill."
+                
+                }
+            ]   
         },
         {
             "nom":"Tortuga verda",
             "tipus":"Rèptil",
             "hàbitat":"Marí",
-            "longitud_m":1.5,
-            "pes_kg":150,
-            "estat_conservacio":"",
-            "caracteristica_1":"S'alimenta principalment d'algues marines.",
-            "caracteristica_2":"Realitza migracions de milers de quilòmetres."
+            "grandària":[
+                {
+                    "longitud_m":1.5,
+                    "pes_kg":150
+                }
+            ],  
+            "estat_conservacio":"Vulnerable",
+            "característiques":[
+                {
+                    "característica_1":"S'alimenta principalment d'algues marines.",
+                    "característica_2":"Realitza migracions de milers de quilòmetres."
+                }
+            ]
         }
     ]
 }
