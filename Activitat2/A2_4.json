@@ -4,7 +4,31 @@
             "nom":"",
             "tipus":"",
             "hàbitat":"",
-            "grandària_pes_":""
+            "longitud":0,
+            "pes_kg":0,
+            "estat_conservacio":"",
+            "caracteristica_1":"",
+            "caracteristica_2":""
+        },
+        {
+            "nom":"",
+            "tipus":"",
+            "hàbitat":"",
+            "longitud":0,
+            "pes_kg":0,
+            "estat_conservacio":"",
+            "caracteristica_1":"",
+            "caracteristica_2":""
+        },
+        {
+            "nom":"",
+            "tipus":"",
+            "hàbitat":"",
+            "longitud":0,
+            "pes_kg":0,
+            "estat_conservacio":"",
+            "caracteristica_1":"",
+            "caracteristica_2":""
         }
     ]
 }
