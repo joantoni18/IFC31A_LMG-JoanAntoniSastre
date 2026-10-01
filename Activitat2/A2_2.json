@@ -1,0 +1,12 @@
+{
+    "estudiants":[
+        {"id":"201","nom":"Anna","cognom":"Serra","email":"anna@exemple.com"},
+        {"id":"202","nom":"Biel","cognom":"Amengual","email":"biel@exemple.com"},
+        {"id":"203","nom":"Joan","cognom":"García","email":"joan@exemple.com"}
+    ],
+    "matricules":[
+        {"id":"601","studentID":"201","modul":"M06","nota":8.5},
+        {"id":"602","studentID":"202","modul":"M06","nota":9.2},
+        {"id":"603","studentID":"203","modul":"M06","nota":7.9}
+    ]
+}
