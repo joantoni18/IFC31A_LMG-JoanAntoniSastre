@@ -20,7 +20,7 @@
             "nom":"Tortuga verda",
             "tipus":"Rèptil",
             "hàbitat":"Marí",
-            "grandària":{"longitud_m":1.5, "pes_kg":150},  
+            "grandària":{"longitud_m":1.5,"pes_kg":150},  
             "estat_conservacio":"Vulnerable",
             "característiques":["S'alimenta principalment d'algues marines.","Realitza migracions de milers de quilòmetres."]
         }
