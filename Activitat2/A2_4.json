@@ -4,57 +4,25 @@
             "nom":"Tauró blanc",
             "tipus":"Peix",
             "hàbitat":"Oceànic",
-            "grandària":[
-                {
-                    "longitud_m":6.4,
-                    "pes_kg":1900
-                }
-            ],
+            "grandària":{"longitud_m":6.4,"pes_kg":1900},
             "estat_conservacio":"En perill",
-            "característiques":[
-                {
-                    "característica_1":"Depredador superior.",
-                    "característica_2":"Temut als oceans per la seva grandària i ferocitat." 
-                
-                }
-            ]
+            "característiques":["Depredador superior.","Temut als oceans per la seva grandària i ferocitat"]
         },
         {
             "nom":"Balena blava",
             "tipus":"Mamífer marí",
             "hàbitat":"Oceànic",
-            "grandària":[
-                {
-                    "longitud_m":30,
-                    "pes_kg":200000
-                }
-            ],
+            "grandària":{"longitud_m":30,"pes_kg":200000},
             "estat_conservacio":"En perill crític",
-            "característiques":[
-                {
-                    "característica_1":"L'animal més gran del planeta.",
-                    "característica_2":"S'alimenta principalment de krill."
-                
-                }
-            ]   
+            "característiques":["L'animal més gran del planeta.","S'alimenta principalment de krill."]   
         },
         {
             "nom":"Tortuga verda",
             "tipus":"Rèptil",
             "hàbitat":"Marí",
-            "grandària":[
-                {
-                    "longitud_m":1.5,
-                    "pes_kg":150
-                }
-            ],  
+            "grandària":{"longitud_m":1.5, "pes_kg":150},  
             "estat_conservacio":"Vulnerable",
-            "característiques":[
-                {
-                    "característica_1":"S'alimenta principalment d'algues marines.",
-                    "característica_2":"Realitza migracions de milers de quilòmetres."
-                }
-            ]
+            "característiques":["S'alimenta principalment d'algues marines.","Realitza migracions de milers de quilòmetres"]
         }
     ]
 }
