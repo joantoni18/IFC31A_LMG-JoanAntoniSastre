@@ -1,3 +1,52 @@
-<buit>
-    
-</buit>
+<factura id='0001'>
+    <empresa>
+        <data>21-10-2022</data>
+        <nom>Empresa ficticia</nom>
+        <direccio>
+            <carrer>Carrer desconegut, 1</carrer>
+            <localitat codiPostal='07001'>Palma</localitat>
+        </direccio>
+        <contacte>
+            <telefon>971 12 34 56</telefon>
+            <fax>971 98 76 54</fax>
+        </contacte>
+        <pagament>Efectiu</pagament>
+    </empresa>
+    <client num='001'>
+        <nom>Carles Canals Gonzalvez</nom>
+        <direccio>
+            <carrer>Carrer Major, 1</carrer>
+            <localitat codiPostal='07300'>Inca</localitat>
+        </direccio>
+    </client>
+    <productes>
+        <producte ref='MII001F'>
+            <descripcio>MICRO PENTIUM IV 300MHZ</descripcio>
+            <quantitat>1</quantitat>
+            <preu>250</preu>
+            <iva>16,0</iva>
+            <import>266,80</import>
+        </producte>
+        <producte ref='MB003'>
+            <descripcio>PLACA BAASE QDI P4</descripcio>
+            <quantitat>1</quantitat>
+            <preu>180</preu>
+            <iva>16,0</iva>
+            <import>208,80</import>
+        </producte> 
+        <producte ref='MED876'>
+            <descripcio>DIMM DDR 512MB 3200</descripcio>
+            <quantitat>2</quantitat>
+            <preu>40</preu>
+            <iva>16,0</iva>
+            <import>92,80</import>
+        </producte> 
+        <producte ref='HD250G'>
+            <descripcio></descripcio>
+            <quantitat></quantitat>
+            <preu></preu>
+            <iva></iva>
+            <import></import>
+        </producte>  
+    </productes>
+</factura>
