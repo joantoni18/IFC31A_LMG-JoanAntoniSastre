@@ -1,13 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <correu>
-    <assumpte></assumpte>
-    <remitent></remitent>
-    <destinatari></destinatari>
-    <copia></copia>
-    <text>
-        <salutacio></salutacio>
-        <cos></cos>
-        <tancament></tancament>
-        <firma></firma>
-    </text>
-    <adjunts></adjunts>
+  <assumpte>Notes de la presentació d'ahir</assumpte>
+
+  <remitent>
+    <nom>Carles Canals</nom>
+    <adreca>cgc@paucasesnovescifp.cat</adreca>
+  </remitent>
+
+  <destinataris>
+    <destinatari tipus="per">
+      <nom>mi</nom>
+    </destinatari>
+    <destinatari tipus="copia">
+      <nom>Alumnat</nom>
+      <adreca>alumnat@paucasesnovescifp.cat</adreca>
+    </destinatari>
+  </destinataris>
+
+  <missatge>
+    <salutacio>Bon dia!</salutacio>
+    <cos>
+      <paragraf>Gràcies per la vostra assistència a la presentació d'ahir sobre els continguts de l'assignatura. Espere haver resolt els vostres dubtes. Adjunte, estan les meves notes sobre la presentació, per si desitgeu compartir-les amb els alumnes que no hi van poder assistir.</paragraf>
+    </cos>
+    <tancament>
+      <frase>¡Gràcies a tots i totes!</frase>
+      <nom>Carles Canals</nom>
+    </tancament>
+    <signatura>
+      <nom>Carles Canals</nom>
+      <carrec>Professor del Departament d'Informàtica del CIFP Pau Casesnoves</carrec>
+    </signatura>
+  </missatge>
+
+  <adjunts>
+    <adjunt>
+      <nomFitxer>notes-presentacio.pdf</nomFitxer>
+      <tipus>application/pdf</tipus>
+      <mida unitat="KB">30</mida>
+    </adjunt>
+  </adjunts>
 </correu>

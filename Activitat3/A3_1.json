@@ -1,0 +1,44 @@
+{
+  "factura": {
+    "numero": "0001",
+    "capcalera": {
+      "data": "2022-10-21",
+      "comanda": 1,
+      "formaPagament": "EFECTIU"
+    },
+    "emissor": {
+      "nom": "Empresa Fictícia",
+      "cif": "Q2826000",
+      "adreca": {
+        "carrer": "Carrer Desconegut, 1",
+        "poblacio": "Palma",
+        "codiPostal": "07001"
+      },
+      "telefon": "971123456",
+      "fax": "971987654"
+    },
+    "client": {
+      "numero": "001",
+      "nom": "Carles Canals Gozálvez",
+      "adrecaEnviament": {
+        "carrer": "Carrer Major, 1",
+        "poblacio": "Inca",
+        "codiPostal": "07300",
+        "provincia": "Illes Balears"
+      }
+    },
+    "linies": [
+      { "referencia": "MII001F", "descripcio": "MICRO PENTIUM IV 3000MHZ", "quantitat": 1, "preu": 250.00, "iva": 16.0, "import": 266.80 },
+      { "referencia": "MB003",   "descripcio": "PLACA BASE QDI P4",        "quantitat": 1, "preu": 180.00, "iva": 16.0, "import": 208.80 },
+      { "referencia": "MED876",  "descripcio": "DIMM DDR 512MB 3200",      "quantitat": 2, "preu": 40.00,  "iva": 16.0, "import": 92.80 },
+      { "referencia": "HD250G",  "descripcio": "DISC DUR 250GB S-ATA 7200","quantitat": 4, "preu": 120.00, "iva": 16.0, "import": 556.80 }
+    ],
+    "totals": {
+      "moneda": "EUR",
+      "baseImposable": 990.00,
+      "percentatgeIva": 16.0,
+      "totalIva": 155.20,
+      "totalFactura": 1145.20
+    }
+  }
+}

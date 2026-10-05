@@ -1,0 +1,34 @@
+{
+  "correu": {
+    "assumpte": "Notes de la presentació d'ahir",
+    "remitent": {
+      "nom": "Carles Canals",
+      "adreca": "cgc@paucasesnovescifp.cat"
+    },
+    "destinataris": [
+      { "tipus": "per", "nom": "mi" },
+      { "tipus": "copia", "nom": "Alumnat", "adreca": "alumnat@paucasesnovescifp.cat" }
+    ],
+    "missatge": {
+      "salutacio": "Bon dia!",
+      "cos": [
+        "Gràcies per la vostra assistència a la presentació d'ahir sobre els continguts de l'assignatura. Espere haver resolt els vostres dubtes. Adjunte, estan les meves notes sobre la presentació, per si desitgeu compartir-les amb els alumnes que no hi van poder assistir."
+      ],
+      "tancament": {
+        "frase": "¡Gràcies a tots i totes!",
+        "nom": "Carles Canals"
+      },
+      "signatura": {
+        "nom": "Carles Canals",
+        "carrec": "Professor del Departament d'Informàtica del CIFP Pau Casesnoves"
+      }
+    },
+    "adjunts": [
+      {
+        "nomFitxer": "notes-presentacio.pdf",
+        "tipus": "application/pdf",
+        "mida": { "valor": 30, "unitat": "KB" }
+      }
+    ]
+  }
+}
