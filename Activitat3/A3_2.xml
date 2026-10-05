@@ -1,3 +1,13 @@
-<buit>
-
-</buit>
+<correu>
+    <assumpte></assumpte>
+    <remitent></remitent>
+    <destinatari></destinatari>
+    <copia></copia>
+    <text>
+        <salutacio></salutacio>
+        <cos></cos>
+        <tancament></tancament>
+        <firma></firma>
+    </text>
+    <adjunts></adjunts>
+</correu>
