@@ -42,11 +42,17 @@
             <import>92,80</import>
         </producte> 
         <producte ref='HD250G'>
-            <descripcio></descripcio>
-            <quantitat></quantitat>
-            <preu></preu>
-            <iva></iva>
-            <import></import>
+            <descripcio>DISC DUR 250GB S-ATA 7200</descripcio>
+            <quantitat>4</quantitat>
+            <preu>120</preu>
+            <iva>16,0</iva>
+            <import>556,80</import>
         </producte>  
     </productes>
+    <total>
+        <baseImposable>990,00</baseImposable>
+        <iva>16,0</iva>
+        <tIVA>155,20</tIVA>
+        <totalFactura>1145,20</totalFactura>
+    </total>
 </factura>
