@@ -11,6 +11,127 @@
     <meta name="description" content="Llistat dels millors pilots de MotoGP dels anys 2000, amb els seus títols, repercussió i impacte a l'esport.">
     <meta name="keywords" content="motos, MotoGP, pilots, Valentino Rossi, Casey Stoner, campionat del món">
     <meta name="author" content="Joan Toni Sastre Vives">
+
+    <!-- ESTILS CSS -->
+    <style>
+        /* Gamma de colors:
+           Verd fosc #145a47 | Verd principal #228c73 | Verd clar #d9f0e8 | Crema #FFFFEF */
+
+        /* Color de fons de la pàgina i tipus de lletra general */
+        body {
+            background-color: #FFFFEF;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px 40px;
+        }
+
+        /* Rètols (títols) amb color i mides de lletra diferents */
+        h1 {
+            color: #145a47;
+            font-size: 40px;
+            border-bottom: 4px solid #228c73; /* Gruix i color de la vora */
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #228c73;
+            font-size: 28px;
+        }
+
+        /* Paràgraf: mida de lletra pròpia */
+        p {
+            font-size: 18px;
+            color: #333333;
+        }
+
+        /* Imatges i peus de figura */
+        figure {
+            border: 3px solid #228c73;      /* Vora de l'element de bloc */
+            display: inline-block;
+            margin: 10px;
+            padding: 8px;
+            background-color: #FFFFFF;
+        }
+
+        figcaption {
+            font-size: 14px;
+            color: #145a47;
+            text-align: center;
+        }
+
+        /* Taula */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 3px solid #145a47;
+        }
+
+        /* Capçalera (títol) de la taula */
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            color: #145a47;
+            padding: 10px;
+            caption-side: top;
+        }
+
+        th, td {
+            border: 1px solid #145a47;
+            padding: 8px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* Fila de capçalera de la taula */
+        th {
+            background-color: #228c73;
+            color: #FFFFEF;
+        }
+
+        /* Color files parells */
+        tr:nth-child(even) {
+            background-color: #d9f0e8;
+        }
+
+        /* Color files senars */
+        tr:nth-child(odd) {
+            background-color: #f4fbf8;
+        }
+
+        /* Llista no ordenada: tipus quadrat, gruix i color de vora */
+        ul {
+            list-style-type: square;
+            border: 2px solid #228c73;
+            padding: 15px 15px 15px 40px;
+            background-color: #d9f0e8;
+            font-size: 17px;
+        }
+
+        /* Estil dels enllaços diferent del per defecte */
+        /* Enllaç no visitat */
+        a:link {
+            color: #145a47;
+            font-weight: bold;
+        }
+
+        /* Enllaç visitat */
+        a:visited {
+            color: #7a5c99;
+        }
+
+        /* Enllaç amb el ratolí a sobre */
+        a:hover {
+            color: #228c73;
+            text-decoration: none;
+        }
+
+        /* Peu de pàgina */
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #145a47;
+            border-top: 2px solid #228c73;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,7 +146,7 @@
         <p>Es consideren els millors en base als títols, a la repercussió i a l'impacte que han tingut en l'esport.</p>
     </section>
 
-    <!-- Imatge amb text alternatiu -->
+    <!-- Imatges amb text alternatiu (rutes relatives) -->
     <figure>
         <img src="imatges/motogplogo.jpg" width="400" alt="Logo de MotoGP">
         <figcaption>Logo MotoGP</figcaption>
@@ -43,6 +164,7 @@
     <section>
         <h2>Millors pilots</h2>
         <table>
+            <caption>Taula d'informació sobre els millors pilots de MotoGP</caption>
             <tr>
                 <th>Pilot</th>
                 <th>Títols a la classe reina</th>

@@ -1,0 +1,234 @@
+/* ==========================================================
+   FULL D'ESTILS COMPARTIT PER TOTES LES PÀGINES DEL WEB
+   Gamma de colors (inspirada en un circuit):
+   Asfalt #1b2127 | Vermell kerb #d7263d | Blau #1f6f8b
+   Blau fosc #154a5e | Fons #eef2f4 | Blanc #ffffff
+   ========================================================== */
+
+/* ---------- Variables de color ---------- */
+:root {
+  --asfalt: #1b2127;
+  --kerb: #d7263d;
+  --blau: #1f6f8b;
+  --blau-fosc: #154a5e;
+  --fons: #eef2f4;
+  --gris: #5b6670;
+}
+
+/* ---------- Estils generals (selector body) ---------- */
+body {
+  background-color: var(--fons);
+  color: var(--asfalt);
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---------- Capçalera (header) ---------- */
+.capcalera {
+  background-color: var(--asfalt);
+  color: #ffffff;
+  padding: 28px 40px 22px 40px;
+}
+
+/* Franja vermella i blanca típica dels pianos d'un circuit */
+.capcalera::after {
+  content: "";
+  display: block;
+  height: 14px;
+  margin: 22px -40px -22px -40px;
+  background: repeating-linear-gradient(90deg, var(--kerb) 0 36px, #ffffff 36px 72px);
+}
+
+#titol-web {
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+}
+
+.subtitol {
+  font-size: 19px;
+  color: #c9d3da;
+  margin: 0;
+}
+
+/* ---------- Menú de navegació (nav) ---------- */
+.menu {
+  background-color: var(--blau-fosc);
+  padding: 12px 40px;
+}
+
+.menu a:link,
+.menu a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 22px;
+  padding-bottom: 3px;
+}
+
+.menu a:hover { border-bottom: 3px solid var(--kerb); }
+
+/* Enllaç de la pàgina on som */
+.menu a.actiu { border-bottom: 3px solid #ffffff; }
+
+/* ---------- Contenidor principal ---------- */
+.contenidor {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 30px 24px 40px 24px;
+}
+
+/* ---------- Títols i mides de lletra diferents ---------- */
+h2 {
+  color: var(--blau-fosc);
+  font-size: 30px;
+  margin-top: 36px;
+}
+
+h3 {
+  color: var(--asfalt);
+  font-size: 23px;
+  margin: 6px 0;
+}
+
+p { font-size: 18px; max-width: 70ch; }
+
+/* ---------- Enllaços: no visitat / visitat ---------- */
+a:link { color: var(--blau); font-weight: bold; }
+a:visited { color: #7a3f9d; }
+a:hover { color: var(--kerb); }
+a:focus-visible { outline: 3px solid var(--kerb); outline-offset: 2px; }
+
+/* ---------- Targetes de notícia (article) ---------- */
+.noticia {
+  background-color: #ffffff;
+  border-left: 8px solid var(--kerb);
+  border-bottom: 2px solid #d5dde2;
+  padding: 14px 22px 8px 22px;
+  margin-bottom: 22px;
+}
+
+/* Etiqueta petita de categoria (span) */
+.etiqueta {
+  background-color: var(--blau);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 3px;
+}
+
+/* ---------- Llistes ---------- */
+/* Llista amb estil quadrat, gruix i color de vora */
+.llista-dades {
+  list-style-type: square;
+  border: 3px solid var(--blau);
+  background-color: #ffffff;
+  padding: 16px 20px 16px 44px;
+  font-size: 17px;
+}
+
+.llista-dades li { margin-bottom: 6px; }
+
+/* Llista d'enllaços externs: cercle i vora diferent */
+.llista-fonts {
+  list-style-type: circle;
+  border: 2px dashed var(--gris);
+  padding: 14px 20px 14px 44px;
+  font-size: 16px;
+}
+
+/* ---------- Taula ---------- */
+.taula-contenidor { overflow-x: auto; }
+
+#taula-mercat {
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid var(--asfalt);
+  background-color: #ffffff;
+}
+
+/* Capçalera (títol) de la taula */
+caption {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--blau-fosc);
+  padding: 10px;
+  caption-side: top;
+}
+
+#taula-mercat th,
+#taula-mercat td {
+  border: 1px solid var(--asfalt);
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+#taula-mercat th {
+  background-color: var(--asfalt);
+  color: #ffffff;
+}
+
+/* Alternança de colors: files parells i senars */
+#taula-mercat tr:nth-child(even) { background-color: #dcebf0; }
+#taula-mercat tr:nth-child(odd)  { background-color: #ffffff; }
+
+/* ---------- Cita (blockquote, cite) ---------- */
+.cita {
+  border-left: 6px solid var(--blau);
+  background-color: #ffffff;
+  margin: 22px 0;
+  padding: 12px 22px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.cita footer {
+  background: none;
+  color: var(--gris);
+  font-size: 15px;
+  font-style: normal;
+  padding: 6px 0 0 0;
+}
+
+cite { color: var(--blau-fosc); }
+
+/* ---------- Abreviatures ---------- */
+abbr { text-decoration: underline dotted; cursor: help; }
+
+/* ---------- Separador temàtic (hr) ---------- */
+hr {
+  border: none;
+  border-top: 4px solid var(--kerb);
+  width: 120px;
+  margin: 34px 0;
+}
+
+/* ---------- Vídeo ---------- */
+.video {
+  width: 100%;
+  max-width: 720px;
+  border: 4px solid var(--asfalt);
+  background-color: #000000;
+}
+
+/* ---------- Peu de pàgina (footer) ---------- */
+.peu {
+  background-color: var(--asfalt);
+  color: #c9d3da;
+  padding: 18px 40px;
+  font-size: 15px;
+}
+
+.peu p { margin: 0; max-width: none; font-size: 15px; }
+
+/* ---------- Adaptació a mòbil ---------- */
+@media (max-width: 600px) {
+  .capcalera, .menu, .peu { padding-left: 20px; padding-right: 20px; }
+  .capcalera::after { margin-left: -20px; margin-right: -20px; }
+  #titol-web { font-size: 32px; }
+  .menu a:link, .menu a:visited { display: inline-block; margin-bottom: 6px; }
+}
