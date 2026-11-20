@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tasca Layout · Flexbox i Grid</title>
-  <!-- Arxiu CSS extern: ruta relativa -->
+  <!-- Arxiu CSS extern (ruta relativa) -->
   <link rel="stylesheet" href="css/estil.css">
 </head>
 <body>
 
-  <!-- ========== BARRA SUPERIOR: logo + menú (Flexbox) ========== -->
+  <!-- ===== BARRA SUPERIOR: logo a l'esquerra i menú a la dreta (Flexbox) ===== -->
   <header class="barra">
     <a class="logo" href="#">LOGO</a>
     <nav class="menu">
@@ -24,21 +24,25 @@
 
   <main>
 
-    <!-- ========== HERO: imatge a l'esquerra i bloc blau a la dreta (Grid 2 columnes) ========== -->
+    <!-- ===== HERO: imatge (esquerra) + bloc blau (dreta) · Grid 2 columnes ===== -->
     <section id="inici" class="hero">
-      <img class="hero-imatge" src="imatges/placeholder.png" alt="Imatge principal">
+      <div class="marcador">
+        <img class="icona icona-hero" src="imatges/icona.png" alt="Imatge principal">
+      </div>
       <div class="hero-text">
-        <h1>Joan Antoni Sastre</h1>
+        <h1>[ EL TEU NOM ]</h1>
         <p>Breu descripció de la pàgina web</p>
         <a class="boto" href="#ofertes">Compra</a>
       </div>
     </section>
 
-    <!-- ========== SECCIÓ DE TEXT: títol + imatge | text + llista + botó (Grid) ========== -->
+    <!-- ===== SECCIÓ DE TEXT: títol + imatge | text + llista + botó · Grid ===== -->
     <section id="sobre" class="intro">
       <div class="intro-esquerra">
         <h2>Lorem ipsum dolor sit amet</h2>
-        <img src="imatges/placeholder.png" alt="Imatge il·lustrativa">
+        <div class="marcador marcador-intro">
+          <img class="icona icona-mitjana" src="imatges/icona.png" alt="Imatge il·lustrativa">
+        </div>
       </div>
       <div class="intro-dreta">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc diam nisl,
@@ -56,40 +60,49 @@
       </div>
     </section>
 
-    <!-- ========== OFERTES: fons blau i quadrícula de 4 targetes (Grid de 3 columnes) ========== -->
+    <!-- ===== OFERTES: fons blau · dues files de Grid (1fr 2fr / 2fr 1fr) ===== -->
     <section id="ofertes" class="ofertes">
       <h2>What we offer</h2>
       <p class="ofertes-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Nunc diam nisl, blandit quis nulla nec, lobortis suscipit justo.</p>
 
-      <div class="quadricula">
-        <!-- Oferta 1: ocupa 1 columna -->
-        <article class="oferta o1">
-          <img src="imatges/placeholder.png" alt="Oferta 1">
+      <!-- Fila 1: targeta estreta + targeta ampla -->
+      <div class="fila-ofertes fila-a">
+        <article class="oferta">
+          <div class="marcador marcador-oferta">
+            <img class="icona icona-petita" src="imatges/icona.png" alt="Oferta 1">
+          </div>
           <div class="oferta-text">
             <h3>Oferta 1</h3>
             <p>Vivamus eu augue tortor. Integer sed justo ornare.</p>
           </div>
         </article>
-        <!-- Oferta 2: ocupa 2 columnes -->
-        <article class="oferta o2">
-          <img src="imatges/placeholder.png" alt="Oferta 2">
+        <article class="oferta">
+          <div class="marcador marcador-oferta">
+            <img class="icona icona-petita" src="imatges/icona.png" alt="Oferta 2">
+          </div>
           <div class="oferta-text">
             <h3>Oferta 2</h3>
             <p>Vivamus eu augue tortor. Integer sed justo ornare.</p>
           </div>
         </article>
-        <!-- Oferta 3: ocupa 2 columnes -->
-        <article class="oferta o3">
-          <img src="imatges/placeholder.png" alt="Oferta 3">
+      </div>
+
+      <!-- Fila 2: targeta ampla + targeta estreta -->
+      <div class="fila-ofertes fila-b">
+        <article class="oferta">
+          <div class="marcador marcador-oferta">
+            <img class="icona icona-petita" src="imatges/icona.png" alt="Oferta 3">
+          </div>
           <div class="oferta-text">
             <h3>Oferta 3</h3>
             <p>Vivamus eu augue tortor. Integer sed justo ornare.</p>
           </div>
         </article>
-        <!-- Oferta 4: ocupa 1 columna -->
-        <article class="oferta o4">
-          <img src="imatges/placeholder.png" alt="Oferta 4">
+        <article class="oferta">
+          <div class="marcador marcador-oferta">
+            <img class="icona icona-petita" src="imatges/icona.png" alt="Oferta 4">
+          </div>
           <div class="oferta-text">
             <h3>Oferta 4</h3>
             <p>Vivamus eu augue tortor. Integer sed justo ornare.</p>
@@ -98,7 +111,7 @@
       </div>
     </section>
 
-    <!-- ========== FORMULARI: caixa grisa arrodonida amb 2 columnes (Grid) ========== -->
+    <!-- ===== FORMULARI: caixa grisa arrodonida amb 2 columnes (Grid) ===== -->
     <section id="contacte" class="contacte">
       <h2>Need a web?</h2>
 
@@ -112,7 +125,7 @@
           <input type="email" id="email" name="email" placeholder="Introdueix el correu electrònic">
 
           <label for="descripcio">Descripció</label>
-          <textarea id="descripcio" name="descripcio" rows="5"></textarea>
+          <textarea id="descripcio" name="descripcio"></textarea>
         </div>
 
         <!-- Columna dreta -->
@@ -122,7 +135,7 @@
 
           <fieldset>
             <legend>Sexe</legend>
-            <div class="opcions fila">
+            <div class="fila-radios">
               <label><input type="radio" name="sexe" value="home"> Home</label>
               <label><input type="radio" name="sexe" value="dona"> Dona</label>
               <label><input type="radio" name="sexe" value="altre"> Altre</label>
@@ -131,7 +144,7 @@
 
           <fieldset>
             <legend>Com has sabut de mi?</legend>
-            <div class="opcions dues-columnes">
+            <div class="dues-columnes">
               <label><input type="checkbox" name="com" value="xarxes"> Xarxes Socials</label>
               <label><input type="checkbox" name="com" value="web"> Web</label>
               <label><input type="checkbox" name="com" value="curriculum"> Curriculum</label>
@@ -140,14 +153,14 @@
           </fieldset>
         </div>
 
-        <!-- Botó d'enviament, centrat a sota de les dues columnes -->
+        <!-- Botó Envia centrat sota les dues columnes -->
         <button class="boto boto-envia" type="submit">Envia</button>
       </form>
     </section>
 
   </main>
 
-  <!-- ========== PEU DE PÀGINA: logo | dues llistes | xarxes socials (Grid) ========== -->
+  <!-- ===== PEU DE PÀGINA: logo | llista 1 | llista 2 | xarxes (Grid) ===== -->
   <footer class="peu">
     <a class="logo" href="#">LOGO</a>
 
@@ -164,7 +177,7 @@
       <li><a href="#">Best sellers</a></li>
     </ul>
 
-    <!-- Icones de xarxes socials fetes amb CSS (cercles) -->
+    <!-- Icones de xarxes socials fetes amb CSS -->
     <div class="xarxes">
       <a class="xarxa" href="#" aria-label="Facebook">f</a>
       <a class="xarxa" href="#" aria-label="Instagram">◎</a>
